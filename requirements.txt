@@ -78,7 +78,7 @@ pytest-html==1.19.0
 pytest-metadata==1.8.0
 python-utils==2.3.0
 pytz==2019.2
-PyYAML==3.12
+PyYAML==5.1
 pyzmq==18.1.0
 requests==2.22.0
 requests-toolbelt==0.9.1
