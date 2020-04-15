@@ -15,20 +15,9 @@ def test_get_info(login_fixture):
     assert res["msg"] == "sucess!"
     assert res["code"] == 0
 
-@allure.title("aaaaaaabbbbbbbb")
-def test_1():
-    print("啦啦啦啦")
-
-@allure.title("aaaaaaaccccccccc")
-def test_2():
-    print("啦啦啦啦")
-
-@allure.title("aaaaaaadddddddddd")
-def test_31():
-    print("啦啦啦啦")
 
 @allure.title("aaaaaaaeeeeeee")
-def test_41():
+def test_4111():
     print("啦啦啦啦")
 
 
@@ -38,7 +27,7 @@ def test_41():
 # pytest --alluredir ./report/allure_raw --allure-epics=epic
 #
 # allure serve report/allure_raw
-#
+#allure serve ./all1
 #
 # allure对用例的等级划分成五个等级
 #  blocker　 阻塞缺陷（功能未实现，无法下一步）
