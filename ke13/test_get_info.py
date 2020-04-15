@@ -1,7 +1,7 @@
 import requests
 from ke13.login_class import KechengAPi
 import pytest
-
+import allure
 @pytest.fixture(scope="session")
 def login_fixture():
     s = requests.session()
@@ -15,3 +15,36 @@ def test_get_info(login_fixture):
     assert res["msg"] == "sucess!"
     assert res["code"] == 0
 
+@allure.title("aaaaaaabbbbbbbb")
+def test_1():
+    print("啦啦啦啦")
+
+@allure.title("aaaaaaaccccccccc")
+def test_2():
+    print("啦啦啦啦")
+
+@allure.title("aaaaaaadddddddddd")
+def test_31():
+    print("啦啦啦啦")
+
+@allure.title("aaaaaaaeeeeeee")
+def test_41():
+    print("啦啦啦啦")
+
+
+# '''
+# pytest --alluredir ./report/allure_raw
+#
+# pytest --alluredir ./report/allure_raw --allure-epics=epic
+#
+# allure serve report/allure_raw
+#
+#
+# allure对用例的等级划分成五个等级
+#  blocker　 阻塞缺陷（功能未实现，无法下一步）
+#  critical　　严重缺陷（功能点缺失）
+#  normal　　 一般缺陷（边界情况，格式错误）
+#  minor　 次要缺陷（界面错误与ui需求不符）
+#  trivial　　 轻微缺陷（必须项无提示，或者提示不规范）
+#
+# '''
